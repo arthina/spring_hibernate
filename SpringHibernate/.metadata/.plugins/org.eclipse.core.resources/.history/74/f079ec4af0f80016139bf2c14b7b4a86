@@ -1,0 +1,8 @@
+package com.scope.banking.entity;
+
+public class Account {
+
+	private String accountNo;
+	private String accountType;
+	private String balance;
+}

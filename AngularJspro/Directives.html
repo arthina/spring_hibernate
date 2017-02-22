@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<script src="./angular.min.1.5.8.js"></script>
+<body ng-app="myApp">
+<my-own-directive></my-own-directive>
+<script>
+var app=angular.module("myApp",[]);
+app.directive("myOwnDirective",function(){
+return{
+template:"<h1>My own custom directive!</h1>"
+};
+});
+</script>
+</body>
+</html>

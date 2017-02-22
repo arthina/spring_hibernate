@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 23, 2017 3:21:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.lnt.entity.EmployeeDetail" table="EMPLOYEEDETAIL">
+        <id name="employeeid" type="long" access="field">
+            <column name="EMPLOYEEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="streetno" type="int">
+            <column name="STREETNO" />
+        </property>
+        <property name="streetname" type="java.lang.String">
+            <column name="STREETNAME" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <one-to-one name="employee" class="com.lnt.entity.Employee"></one-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<script src="./angular.min.1.5.8.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="personCtrl">
+First Nmae:<input type="text" ng-model="firstName"><br>
+Last Nmae:<input type="text" ng-model="lastName"><br>
+<br>
+Full Name:{{fullName()}}
+</div>
+<script src="PersonController.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="angular.min.1.5.8.js"></script>
+
+</head>
+<body ng-app="" ng-init="books=[
+						{name:'The Plastic Mind', author:'Sharon B'},
+						{name:'MindSet', author:'Carol Dweck'},
+						{name:'Train the Brain', author:'Kawasinha'},						
+						{name:'Super Brain', author:'Deepak Chopra'}
+						]">
+		<p>Book and Author</p>
+		<ul>
+			<li ng-repeat="book in books | orderBy:'name' | filter:'M'">
+				<p><span style="background-color:blue; color:white" ng-bind="(book.name | uppercase) + ' written by ' + book.author"></span></p>
+			</li>
+		</ul>
+		
+</body>
+</html>

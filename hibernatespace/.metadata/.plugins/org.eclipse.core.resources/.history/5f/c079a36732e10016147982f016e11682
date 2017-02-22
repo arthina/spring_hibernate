@@ -1,0 +1,55 @@
+package com.lnt.executor;
+
+import java.util.Iterator;
+import java.util.List;
+
+
+
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.lnt.pojo.Book;
+
+public class HQLDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Configuration config=new Configuration();
+		config.configure("hibernate.cfg.xml");
+		SessionFactory sessionFactory=config.buildSessionFactory();
+		Session session=sessionFactory.openSession();
+		Transaction transaction = session.beginTransaction();
+		
+		//String q="from Book" ; //accessing from Book class in hql we neeed to give class name not table name
+		//String q="from Book b where b.price>9";//first make update in cfg file then run BookMain.java and then run HQLDemo
+		//String q="from Book b where b.price=900";
+		String q="select b.bookTitle from Book b ";
+		Query query=session.createQuery(q);
+		List<Object> results=query.list();//list will contain Book objects
+		
+		//to get the object we use iterator,foreach loop
+		Iterator iter =results.iterator();
+		while(iter.hasNext())
+		{
+			//Book book =(Book)iter.next();
+			String title = (String)iter.next();
+			//System.out.println(book.getBookid() +"\t" + book.getBookTitle() +"\t" + book.getAuthor() +"\t" + book.getPrice());
+			System.out.println(title);
+		}
+		
+		
+		
+		
+		
+		transaction.commit();
+		session.close();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.lnt.entity;
+
+public class OneToOneMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Configure cfg=new Configurate().configure("hibernate.cfg.xml");
+		ServiceRegistry serviceregisrty=new ServiceRegistryBuilder().applySetting(cfg.getProperties()).buildServiceRegistry();
+		
+		
+
+	}
+
+}

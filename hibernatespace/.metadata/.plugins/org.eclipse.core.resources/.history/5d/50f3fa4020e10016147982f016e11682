@@ -1,0 +1,34 @@
+package com.lnt.pojo;
+
+import java.util.Scanner;
+
+public class ISBN {
+	 public static boolean isValidISBN(String isbn){
+	        int digit, sum=0, len=isbn.length();
+	        if(len!=10) throw new IllegalArgumentException();
+	        for(int i=0;i<len;i++){
+	            digit=isbn.charAt(i)-'0';
+	            digit=(digit==40 || digit==72)?10:digit;
+	            sum += digit*(10-i);
+	        }
+	        System.out.println("OUTPUT:\tSUM = "+sum);          
+	        return (sum%11)==0;
+	    }
+	    public static void main(String args[]){
+	        Scanner sc = new Scanner(System.in);
+	        String isbn;
+	        System.out.print("INPUT CODE:\t");
+	        isbn=sc.nextLine();
+	        System.out.print("OUTPUT:\t\t");
+	        try{
+	            if(isValidISBN(isbn)){
+	                System.out.println("\t\tLEAVES NO REMAINDER- VALID CODE");
+	            }else{
+	                System.out.println("\t\tLEAVES REMAINDER- INVALID CODE");
+	            }
+	        }catch(IllegalArgumentException e){
+	            System.out.println("INVALID INPUT");
+	        }
+	    }
+
+}

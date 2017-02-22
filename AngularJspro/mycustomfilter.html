@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="./angular.min.1.5.8.js"></script>
+<body>
+<H1>Custom Filter Demo</H1><hr/>
+<ul ng-app="myApp" ng-controller="namesCtrl">
+<li ng-repeat="x in names">
+    {{x|myFormat}}
+</li>
+</ul>
+<script>
+var app = angular.module('myApp', []);
+app.filter('myFormat', function() {
+    return function(x) {
+        var i, c, txt = "";
+		for (i = 0; i < x.length; i++) {
+		c = x[i];
+          if(i%2==0)
+		  {
+		  c=i;
+		  }
+         txt+=c;
+		}
+		return txt;
+    };
+});
+		
+		
+app.controller('namesCtrl', function($scope) {
+    $scope.names = [
+        'Ram',
+        'Carl',
+        'Margareth',
+        'Hege',
+        'Pitambara',
+        'Gustav',
+        'Birgit',
+        'Mohan',
+        'Kai'
+        ];
+});
+</script>
+</body>
+</html>

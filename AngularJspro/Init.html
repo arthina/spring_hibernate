@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script src="./angular.min.1.5.8.js">
+</script>
+
+</head>
+
+<body>
+
+<div ng-app="" ng-init="firstName='Ram';myCol='yellow'">
+<p>First Name: <input type="text" ng-model="name"/></p>
+<p>name is <span ng-bind="name"></span></p>
+<p>The name is <span ng-bind="firstName"></span></p>
+
+
+
+first name is {{firstName+"-"+name}}<br>
+sum of 5 and 10 is {{5+10}}<hr/>
+
+<input type="text"style="background-color:{{myCol}}" ng-model="fname"/>
+</div>
+</div>
+</body>
+
+</html>

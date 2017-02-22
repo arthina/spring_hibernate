@@ -1,0 +1,11 @@
+package com.scope.banking.entity;
+
+public class ContactInfo {
+	
+	private String mobileNo;
+	private String landline;
+	private String emailId;
+	
+	
+
+}

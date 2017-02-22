@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script src="./angular.min.1.5.8.js"></script>
+
+</head>
+<body ng-app="" ng-init="fruits=['banana','apple','mango']">
+
+<h2>
+{{fruits[0]}}<br/>
+{{fruits[1]}}<br/>
+{{fruits[2]}}
+</h2>
+<h3>
+
+<ul>
+<li ng-repeat="name in fruits">
+{{name}}
+</li>
+</ul>
+</h3>
+</body>
+
+
+
+</html>

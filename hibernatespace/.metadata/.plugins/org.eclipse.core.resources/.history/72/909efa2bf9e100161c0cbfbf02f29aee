@@ -1,0 +1,11 @@
+package com.lnt.entity;
+
+public class ManyToManyMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

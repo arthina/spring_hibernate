@@ -1,0 +1,23 @@
+package com.scope.banking.helper;
+
+import org.springframework.context.support.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.scope.banking.entity.Bank;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Resource resource=new ClassPathResource("spring-core.xml");
+		//BeanFactory beanFactory=new XmlBeanFactory(resource);
+		AbstractApplicationContext applnCtx= new ClassPathXmlApplicationContext("spring-core.xml");
+				
+		//Customer customer=(Customer) applnCtx.getBean("customer");
+		//System.out.println(customer.toString());
+		Bank bank=(Bank) applnCtx.getBean("bankInfo");
+		System.out.println(bank.toString());
+		
+	}
+
+}

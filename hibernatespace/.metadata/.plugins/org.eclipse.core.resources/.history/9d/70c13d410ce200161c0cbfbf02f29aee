@@ -1,0 +1,15 @@
+package com.lnt.entity;
+
+public class FourWheeler  extends Vehicle{
+	
+	public String steeringWheel;
+
+	public String getSteeringWheel() {
+		return steeringWheel;
+	}
+
+	public void setSteeringWheel(String steeringWheel) {
+		this.steeringWheel = steeringWheel;
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.scope.banking.entity;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Bank {
+
+	private String bankCode;
+	private String name;
+	@Autowired
+	private Customer customer;
+	
+	public String getBankCode() {
+		return bankCode;
+	}
+	public void setBankCode(String bankCode) {
+		this.bankCode = bankCode;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Customer getCustomer() {
+		return customer;
+	}
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
+}

@@ -1,0 +1,40 @@
+package com.scope.banking.entity;
+
+import java.util.Date;
+
+public class Customer {
+	
+	private int customerId;
+	private String name;
+	private Address permAddress;
+	private Address commnAddress;
+	private Date dob;
+	private ContactInfo;
+
+		
+	
+	public int getCustomerId() {
+		return customerId;
+	}
+	public String getName() {
+		return name;
+	}
+	public Address getPermAddress() {
+		return permAddress;
+	}
+	public Address getCommnAddress() {
+		return commnAddress;
+	}
+	public Date getDob() {
+		return dob;
+	}
+	public Customer(int customerId, String name, Address permAddress,
+			Address commnAddress, Date dob) {
+		this.customerId = customerId;
+		this.name = name;
+		this.permAddress = permAddress;
+		this.commnAddress = commnAddress;
+		this.dob = dob;
+	}
+
+}

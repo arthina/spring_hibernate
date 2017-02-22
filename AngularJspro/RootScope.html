@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<script src="./angular.min.1.5.8.js"></script>
+<body ng-app="myApp">
+<p>The rootscope's favourite color:</p>
+<h1>{{color}}</h1>
+
+<div ng-controller="myCtrl">
+<p>The scope of the controller's favourite color:</p>
+<h1>{{color}}</h1>
+</div>
+
+<p>The rootscope favourite color is still:</p>
+<h1>{{color}}</h1>
+<script>
+
+var app=angular.module('myApp',[]);
+app.run(function($rootScope){
+$rootScope.color='blue';
+});
+app.controller('myCtrl',function($scope){
+$scope.color="red";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="angular-min.js"></script>
+
+</head>
+<body ng-app="" ng-init="books=[
+						{name:'The Plastic Mind', author:'Sharon B'},
+						{name:'MindSet', author:'Carol Dweck'},
+						{name:'Train the Brain', author:'Kawasinha'},						
+						{name:'Super Brain', author:'Deepak Chopra'}
+						]">
+		<H2>Book and Author</H2> <hr/>
+		
+		<table border="1" width="100%">
+			<th>Book Title</th><th>Author</th>
+			<tr ng-repeat="book in books | orderBy:'name'">
+				<td>{{book.name}}</td>
+				<td>{{book.author}}</td>
+			</tr>
+		
+		</table>
+		
+		
+		
+</body>
+</html>

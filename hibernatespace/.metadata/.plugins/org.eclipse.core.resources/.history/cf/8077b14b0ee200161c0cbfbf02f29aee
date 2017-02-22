@@ -1,0 +1,46 @@
+package com.lnt.entity;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+
+public class SingleTableMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Configuration cfg=new Configuration().configure("hibernate.cfg.xml");
+		ServiceRegistry serviRegistry=new ServiceRegistryBuilder().applySettings(cfg.getProperties()).buildServiceRegistry();
+		SessionFactory factory=cfg.buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction t=session.beginTransaction();
+		
+		
+		Vehicle v=new Vehicle();
+		v.setVehicleNo("V101");
+		v.setVehicleModel("1994");
+		
+		
+		TwoWheeler tw=new TwoWheeler();
+		tw.setVehicleNo("AC123");
+		tw.setVehicleModel("2012");
+		tw.setSteeringHandle("Self start");
+		
+		FourWheeler fw=new FourWheeler();
+		fw.setVehicleNo("BD122");
+		fw.setVehicleModel("2016");
+		fw.setSteeringWheel("Power Steering");
+		
+		
+		session.save(v);
+		session.save(tw);
+		session.save(fw);
+		
+		t.commit();
+		session.close();
+	}
+
+}
