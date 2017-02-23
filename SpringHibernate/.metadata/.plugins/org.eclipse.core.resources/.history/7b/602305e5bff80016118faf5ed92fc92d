@@ -1,5 +1,0 @@
-package com.scope.banking;
-
-public interface Transaction {
-
-}
