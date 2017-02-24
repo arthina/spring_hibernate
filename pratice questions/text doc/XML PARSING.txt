@@ -1,0 +1,96 @@
+XML PARSING 
+
+
+1. 
+Which mechanism do you use to directly change an XML file from one 
+DTD into another? 
+a. XSLT 
+b. XPath 
+c. StaX 
+d. SAX 
+e. Schema 
+f. Sample Code 
+2. 
+DocumentBuilderFactory factory =DocumentBuilderFactory.newInstance(); 
+DocumentBuilder builder = factory.newDocumentBuilder(); 
+Document doc = builder.newDocument(); 
+Node node1 = doc.createElement("node1"); 
+Node node2 = doc.createElement("node2"); 
+Node node3 = doc.createTextNode("Hello, World"); 
+doc.appendChild(node2); 
+node1.appendChild(node3); 
+node3 = doc.createElement("node4"); 
+node2.appendChild(node1); 
+node1 = doc.createTextNode("Good-bye"); 
+node2.appendChild(node3); 
+node3.appendChild(node1); 
+Which code sequence is the XML tree for the document created with the 
+sample code above? 
+a. <node2> 
+<node4>Good-bye</node4> 
+<node1>Hello, World</node1> 
+</node2> 
+
+b. <node1> 
+<node2>Hello, World</node2> 
+<node4>Good-bye</node4> 
+</node1> 
+
+c. <node1> 
+<node4>Good-bye</node4> 
+<node2>Hello, World</node2> 
+node1> 
+
+d. <node1> 
+<node2>Hello, World</node2> 
+<node3>Good-bye</node3> 
+</node1> 
+
+e. <node2> 
+<node1>Hello, World</node1> 
+<node4>Good-bye</node4> 
+</node2> 
+
+
+XML PARSING 
+
+
+3. 
+File f= . .. 
+DocumentBuliderFactory factory=DocumentBuilderFactory.newInstance(); 
+DocumentBuilder builder = factory.newDocumentBuilder(); 
+Document.newDocumentBuilder() ; 
+// Get the first <example> element in the DOM 
+// ???? 
+// Use a Tranformer for output 
+TransformerFactory tFactory = TransformerFactory.newInstance () ; 
+Tranformer transformer = tFactory.newTranformer () ; 
+DOMSource source = new DOMSource (node) ; 
+StreamResult result = new StreamResult (System.out) ; 
+transformer.transform ( source, result) ; 
+Which code snippet do you insert in place of ???? in the sample code 
+above, to get the first example node from the DOM tree before 
+dumping its subtree? 
+
+a. NodeList list =document.getElementsByTagName (“example”); 
+Node node = list.item(1) ; 
+b. ElementList list = document.getElementByTagName (“example”); 
+Node node = list.item(1) ; 
+c. Node node = document.getElementByTagName (“example”); 
+d. ElementList list = document.getElementsByTagName (“example”); 
+Node node = list.item(0); 
+e. NodeList list = Document.getElementsByTagName (“example”); 
+Node node = list.item(0); 
+4. 
+You are reading an XML file with a SAX parser, and you need to 
+create a subclass to handle error cases. To do this, you choose to 
+use the superclass, which serves as the default base class for SAX 
+error handling. 
+Based on the above scenario, what is the name of the superclass and 
+the interface it must implement? 
+a. DefaultHandler and ErrorHandler 
+b. DefaultHandler and ContentHandler 
+c. BaseHandler and ErrorHandler 
+d. DefaultBaseHandler and ErrorHandler 
+e. DefaultBaseHandler and ContentHandler 
+

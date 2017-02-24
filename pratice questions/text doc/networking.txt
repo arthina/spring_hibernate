@@ -1,0 +1,85 @@
+NETWORKING 
+
+
+1. 
+You want to send an email message to user@example.com from your 
+java program using a platform-specific tool external to java 
+runtime environment. 
+Referring to the scenario above, which method call of Desktop 
+do you use? 
+
+a. 
+send(new URI(“mailto:user@example.com”)) 
+b. 
+open(“x-application/email”,”user@example.com”) 
+c. 
+sendto(“user@example.com”) 
+d. opendesktop:mailto(“user@example.com”) 
+e. 
+mail(new URI(“mailto:user@example.com”)) 
+2. 
+Which statement returns the IP address of www.example.com? 
+a. InetAddress ip= InetAddress.getByName(“www.example.com”)b. 
+InetAddress ip= InetAddress(“www.example.com”)c. 
+InetAddress ip= 
+System.resolveHostByName(“www.example.com”)d. 
+String ip= InetAddress.DNSLookup(“www.example.com”)e. 
+InetAddress ip=Socket.DNSLookup(“www.example.com”)3. 
+Which classes does java provide for networking applications 
+beyond the URL and URLConnection classes offer? 
+a. Network and NetworkConnector 
+b. Connect and Connector 
+c. Socket and ServerSocket 
+d. Application and ApplicationSocket 
+e. System and SystemConnect 
+4. 
+Which line of code returns the HTML text of the root webpage at 
+www.example.com? 
+a. Object content = 
+new URL("http://www.example.com").readObject(); 
+b. Object content = 
+new URL("http://www.example.com").getContent(); 
+c. HTMLDocument doc = 
+HTMLDocument.create("http://www.example.com"); 
+d. Integer content = 
+URL.get("http://www.example.com").getContent(); 
+e. 
+String content = 
+new FileInputStream("http://www.example.com").read(); 
+
+NETWORKING 
+
+
+5. 
+Which code segment listens for a socket connection? 
+a. Socket socket = new Socket(); 
+b. Socket socket = SocketImpl.listen(8080); 
+c. Socket socket = HttpURLConnection.open(8080); 
+d. Socket socket = (new ServerSocket(8080)).accept(); 
+e. Socket socket = (new MulticastSocket(8080)).joinGroup(); 
+6. 
+You want to manage the cookies that are sent and received for a 
+series of successive network connections during a session-
+oriented web connection. 
+Based on the scenario above, which code sequence do you use to 
+install the CookieHandler for a specific URL connection? 
+a. String urlString = ... URL url = new URL(urlString); 
+URLConnection connection = url.openConnection(); 
+connection.setCookieHandler(new CookieManager()); 
+b. String urlString = ... URL url = new URL(urlString); 
+url.setCookie(new CookieManager()); 
+URLConnection connection = url.openConnection(); 
+c. String urlString = ... 
+System.setDefaultCookieHandler(new CookieManager()); 
+URL url = new URL(urlString); 
+URLConnection connection = url.openConnection(); 
+d. String urlString = ... 
+Toolkit.getDefaultToolkit().setDefaultCookieHandler(new 
+CookieManager()); 
+URL url = new URL(urlString); 
+URLConnection connection = url.openConnection(); 
+e. String urlString = ... 
+CookieHandler.setDefault(new CookieManager()); 
+URL url = new URL(urlString); 
+URLConnection connection = url.openConnection(); 
+

@@ -1,0 +1,425 @@
+FUNDAMENTALS 
+
+
+1. 
+Sample Code 
+int count=0, i=0; 
+do { 
+count += i; 
+i++; 
+if (count > 5) break; 
+} while (i<=4); 
+What is the value of the variable count when the sample code 
+above is executed? 
+
+a. 0 
+b. 1 
+c. 4 
+d. 6 
+e. 10 
+2. 
+Sample Code 
+int a=3; 
+int b=0; 
+switch(a) 
+{ 
+
+case 1: 
+b=a+2; 
+case 2: 
+b=a+3; 
+case 3: 
+b=a+4; 
+case 4: 
+b=a+5; 
+case 5: 
+b=a+6; 
+default: 
+b=a*2; 
+} // Line A 
+
+
+What is the value of b at Line A in the sample code above? 
+
+a. 5 
+b. 6 
+c. 7 
+d. 8 
+e. 9 
+
+FUNDAMENTALS 
+
+
+3. 
+Line 1 String[] arr = new String[5]; 
+Line 2 int[] arr1 = new int[5]; 
+Line 3 Scanner kb = new Scanner(System.in); 
+Line 4 for(int i=0;i<5;i++) 
+Line 5 { 
+Line 6 System.out.println(“ Enter Example:”); 
+Line 7 arr[i] = kb.nextLine(); 
+Line 8 System.out.println(“Enter Another Example:”); 
+Line 9 arr[i] = kb.nextInt(); 
+Line 10 } 
+
+Which change do you make to the sample code above to add values 
+to both Example arrays? 
+
+a. Remove Line 1 from the code. 
+b. Change Line 2 to String[] arr1 = new String[5]; 
+c. Remove Line 9 from the code. 
+d. Add kb.nextLine(); after Line 9. 
+e. Add Scanner kb = new Scanner(System.in); after Line 10. 
+4. 
+int i1= 2; 
+int i2= 5; 
+double d; 
+d = 3 +i1 /i2 +2; 
+What is the value of d after the sample code above is 
+executed? 
+a. 3.0 
+b. 5.0 
+c. 5.2 
+d. 5.4 
+e. 7.5 
+f. 5. 
+5. 
+Which command line do you use to tell the javac compiler where 
+compiled class files go? 
+a. 
+-s 
+b. 
+-d 
+c. 
+-output 
+d. 
+-cp 
+e. 
+–target 
+
+FUNDAMENTALS 
+
+6. 
+A loss of information results when you cast: 
+a. a short into a float. 
+b. a byte into an int. 
+c. a float into a double. 
+d. an int into a byte. 
+e. an int into a double. 
+7. 
+JIT compilation happens within the runtime environment at: 
+a. run time, when a class is loaded. 
+b. run time, before the code is first executed. 
+c. run time, when the system pauses for the garbage 
+collection. 
+d. run time, during the bytecode verification phase. 
+e. Compilation time, with the javac compiler. 
+8. 
+You are using the most current compiler and want to compile 
+code only meant to be compliant with prior versions of Java. You 
+want it to be runnable with the prior version runtime and you do 
+not want to permit constructs like a for-each loop. 
+Referring the above scenario, which command do you use to 
+accomplish this? 
+
+a. javac –v ***prior version*** -source *** prior version*** 
+Source.java 
+b. javac –Xversion *** prior version*** Source.java 
+c. javac –source ***prior version*** -target *** prior 
+version*** Source.java 
+d. javac –version *** prior version*** Source.java 
+e. javac –target ***prior version*** -Xversion *** prior 
+version*** Source.java 
+
+FUNDAMENTALS 
+
+
+9. 
+javac Main.java 
+classes in application are 
+Main.java:class Main 
+Main.java:class Envelope 
+Letter.java:class Envelope{ 
+Letter.java: public class Letter { 
+.Letter.java:12: duplicate class :Envelope 
+class Student { 
+Based on the sample output of the compiler above, what is the 
+error in the code? 
+
+a. The Main.java:class was not made public 
+b. The Letter class was listed after the Main class 
+c. The classes have not been declared properly 
+d. The Letter class is a public class 
+e. There are two classes called Envelope 
+10. 
+Which command line do you use to extract the contents of jar 
+file tools.jar? 
+a. jar evf tools.jar 
+b. java java.util.zip.Jar –r tools.jar 
+c. tar fx tools.jar 
+d. jar xf tools.jar 
+e. unjar tools.jar 
+11. 
+String names[] = {“one”, “two”, “three”}; 
+for (int i=0; i<names.length; i++) { 
+
+System.out.println(names[i]); 
+} 
+Which code string do you use to convert the for loop in the 
+sample code above to a for each loop? 
+
+a. foreach(names) { 
+System.out.println(names.next()); 
+} 
+
+
+b. for (String name: names) { 
+System.out.println(name); 
+} 
+
+
+c. for(names : String name) { 
+System.out.println(name); 
+} 
+
+
+d. foreach(String[] names:name) { 
+System.out.println(names); 
+} 
+
+
+e. foreach(String name: names) { 
+System.out.println(name); 
+} 
+
+
+
+FUNDAMENTALS 
+
+
+12. 
+You are working on the code when you receive the following: 
+Exception in thread “main” 
+
+java.lang.UnsupportedClassVersionError: Bad version number in 
+.class file 
+Based on the scenario above, the error message indicates that 
+the: 
+
+a. Code will not compile. 
+b. Main class does have a proper class declared. 
+c. Class file does not have a proper method in the “main” 
+thread. 
+d. Code was compiled in a higher version of java than what 
+is currently running 
+e. Exception does not have proper class file set up in the 
+“main” folder 
+
+13. 
+You determine the size of an array of ints passed to a method 
+by: 
+a. using the array's getSize() method. 
+b. initializing the array until an exception is thrown. 
+c. using the sizeof() operator. 
+d. using the array's size() method. 
+e. using the array's length field. 
+14. 
+int[] Array1={3,6,2,9,5,8}; 
+int[] Array2=Array1; 
+int[] Array3=Array2; 
+Array1[2]=2; 
+Array2[3]=5; 
+Array3[4]=7; 
+Array2[4]=Array3[4]; 
+What is the value of Array1[4] when the sample code above is 
+executed? 
+
+a. 2 
+b. 3 
+c. 7 
+d. 8 
+e. 9 
+
+FUNDAMENTALS 
+
+15. 
+While starting a VM you receive the following error: 
+"Error occurred during initialization of VM Could not reserve 
+enough space for object heap, Could not create the Java virtual 
+machine." 
+Based on the scenario above, how do you resolve this error? 
+a. Run the JVM with -XX:MaxHeapSize=***. 
+b. Downsize the memory settings to free up space for the heap 
+size. 
+c. Add more memory to the box you are using to increase 
+bandwidth. 
+d. Run the VM locally to clear the memory allocation, then 
+push to remote machine. 
+e. Edit the properties file to change your heap size to 
+handle the VM startup. 
+16. 
+Which of the following identifiers are valid Java identifiers? 
+a. A$B 
+b. helloWorld 
+c. transient 
+d. java.lang 
+e. Public 
+f. 1980_s 
+17. 
+What is the result of the following code? 
+3. intx = 10, y= 3; 
+4. if(x% y== 2) 
+5. System.out.print(“two”). 
+6. System.out.print(x % y); 
+7. if(x% y== 1) 
+8. System.out.print(“one”). 
+a. two 
+b. two1 
+c. two2 
+d. one 
+e. 1one 
+
+FUNDAMENTALS 
+
+18. 
+What is the result of the following code? 
+4. intx = 5, y =10; 
+5. boolean b= x< 0; 
+6. if(b = true) { 
+7. System.out.print(x); 
+8. } else { 
+9. System.out.print(y); 
+10. } 
+A. Compiler error on line 5. 
+B. Compiler error on line 6. 
+C. 5 
+D. 10 
+E. The code compiles but there isno output. 
+19. 
+What is the result of the following code? 
+4. char c = ‘a’; 
+
+5. for(int i= 1;i <= 3;i++){ 
+6. for(intj=0;j<=2;j++){ 
+7. System.out.print(c++); 
+8. } 
+9. } 
+a. abcdefghi 
+b. bcdefghij 
+c. abcdef 
+d. abcabcabc 
+e. The code does not compile. 
+20. 
+What is the result of the following code? 
+10. String [] values = {“one”, “two”, “three”}; 
+
+11. for(int index = 0; index < values.length; index++) { 
+12. System.out.print(values[index]); 
+13. } 
+14. System.out.print(index); 
+a. onetwothree 
+b. onetwothree2 
+c. onetwothree3 
+d. onetwothree4 
+e. The code does not compile. 
+
+FUNDAMENTALS 
+
+21. 
+What is the output of the following program? 
+1. public class Average { 
+2. public static void main(String [] args) { 
+3. int [] scores = {2,4,5,5,6,8}; 
+4. intsum=0; 
+5. for(int x : scores) { 
+6. sum+=x; 
+7. } 
+8. System.out.println(sum / scores.length); 
+9. } 
+10. } 
+a. 30 
+b. 6 
+c. 4 
+d. 5 
+e. The code does not compile. 
+22. 
+What is the output of the following code? 
+5. int count = 0; 
+6. rowloop : for(int row = 1; row < = 3;row++) { 
+7. for(int col = 1; col < = 2; col++) { 
+8. if(row*col%2==0) 
+9. continue rowloop; 
+10. count++; 
+11. } 
+12. } 
+13. System.out.println(count); 
+a. 1 
+b. 2 
+c. 3 
+d. 4 
+e. 6 
+f. The compiler error at line 8 
+
+FUNDAMENTALS 
+
+23. 
+What is the result of the following code? 
+5. intm = 9, n =1; 
+6. intx = 0; 
+7. while(m > n) { 
+8. m--; 
+9. n +=2; 
+10. x += m +n; 
+11. } 
+12. System.out.println(x); 
+a. 11 
+b. 13 
+c. 23 
+d. 36 
+e. 50 
+f. The compiler error at line 10 
+24. 
+What is the result of the following code? 
+7. inty = 1; 
+8. do { 
+9. System.out.print(y + “ “); 
+10. }while(y < = 10); 
+a. The code does not compile. 
+b.1 2 3 45 67 8 9 
+c.1 2 3 45 67 8 910 
+d.1 2 3 45 67 8 910 11 
+e. ‘ 1 ‘ an infinite number of times 
+25. 
+What will be the output when running the following program? 
+public class MyClass { 
+public static void main(String[] args) { 
+int i=0; 
+int j; 
+for (j=0; j<10; ++j) { i++; } 
+
+System.out.println(i + " " + j); 
+
+} 
+} 
+Select the correct answer(s). 
+
+
+(a) The first number printed will be 9. 
+(b) The first number printed will be 10. 
+(c) The first number printed will be 11. 
+(d) The second number printed will be 9. 
+(e) The second number printed will be 10. 
+(f) The second number printed will be 11. 
+
+FUNDAMENTALS 
+
+26. 
+What is the value of c after the code is executed? 
+inta=5,b=7; 
+intc = a+=2*3+b--; 
+a. 5 
+b. 17 
+c. 18 
+d. 21 
+e. 22 
+

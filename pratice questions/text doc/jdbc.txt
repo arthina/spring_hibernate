@@ -1,0 +1,66 @@
+JDBC 
+
+
+1. 
+String addRecord=”INSERT INTO Table1 (Field1) values (“ + 
+System.currentTimeMillis()+ “);”; 
+Statement st=dbConnection.createStatement(); 
+//Execute the Statement 
+// **** ???? 
+Which line of code do you insert in the place of ???? in the 
+above sample code? 
+
+
+a. st.runCommand(addRecord); 
+b. st.executeNonResultSetQuery(addRecord); 
+c. int updateCount=st.executeUpdate(addRecord); 
+d. st.openRecordSet(addRecord); 
+e. ResultSet rs=st.executeQuery(addRecord); 
+2. 
+What java interface do you use to call an SQL stored procedure 
+that takes two input parameters and returns two output 
+parameters? 
+a. CallableStatement 
+b. PreparedStatement 
+c. ResultSetMetadata 
+d. ResultSet 
+e. Statement 
+3. 
+ResultSet rs = st.executeQuery("SELECT * FROM EMPLOYEE"); 
+rs.first(); 
+rs.deleteRow(); 
+rs.close(); 
+Based on the sample code above, what is the result of the 
+deleteRow() method? 
+a. The row is removed from the database, but it remains in 
+the ResultSet. 
+b. The row remains in both the ResultSet and the database, 
+because rs.commit() is not called. 
+c. The row remains in both the ResultSet and the database, 
+because rs.flushChanges() is not called. 
+d. The row is removed from the ResultSet, but it remains in 
+the database. 
+e. The row is removed from the ResultSet and the database. 
+
+JDBC 
+
+4. 
+Which code do you use to create a scrollable ResultSet? 
+a. Connection con = ...; 
+Statement st = 
+con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, 
+ResultSet.CONCUR_UPDATABLE); 
+ResultSet rs = st.executeQuery(sqlString); 
+b. Statement st = new Statement(); 
+st.setCursorType(Statement.TYPE_SCROLLABLE,Statement.CONCU 
+R_READ_ONLY); 
+ResultSet rs = st.executeSQL(sqlString); 
+c. ResultSet rs = new ResultSet(); 
+rs.setScrollable(true); rs.execute(sqlString); 
+d. Connection con = ...; 
+Statement st = con.createStatement(); 
+ResultSet rs = st.executeQuery(sqlString, 
+ResultSet.SCROLLABLE ); 
+e. ScrollableResultSet srs = new ScrollableResultSet(); 
+srs.openResultSet(sqlString); 
+

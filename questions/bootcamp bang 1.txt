@@ -1,0 +1,449 @@
+--------------------------------------------------
+Question 1
+--------------------------------------------------
+how many times the following loop executes if x=2?
+
+Repeat
+If x%2 is equal to zero
+Print x
+Bump x
+until(x>5)
+
+A)5
+B)4
+C)0
+D)Infinite
+
+-------------------------------------------------
+Question 2
+-------------------------------------------------
+x=x+y
+y=x-y
+x=x+y 
+if x=10 y=15, final value of x & y are?
+
+A)x=20,y=10
+B)35,10 
+C)20,20
+D)35,20
+
+--------------------------------------------------
+Question 3
+--------------------------------------------------
+Specifying the variable type and size is called as
+
+A)Declaration
+B)Definition
+C)Initialization
+
+Note:
+int i ; // Memory is not allocated here . It has some garbage value.. (4byte - 32bits )
+int j=10; // 
+
+--------------------------------------------------
+Question 4
+--------------------------------------------------
+Which of the following are the different constructs of an algorithm?
+
+A)Input, Output, Process 
+B)Sequential ,conditional ,iterational 
+C)Rectangle, Diamond, Circle
+
+
+--------------------------------------------------
+Question 5
+--------------------------------------------------
+True or False
+a)Jquery a large library of Javascript functions
+b)Jquery does not provide support for event handling in a web page
+
+
+A)a.True b.FALSE
+B)a.FALSE b.TRUE
+C)c.BOTH TRUE
+D)d.BOTH FALSE
+
+--------------------------------------------------
+Question 6
+--------------------------------------------------
+Which of the following is an incorrect rule for a well formed XML?
+
+A)Elements must be properly nested
+B)Every element should have a closing tag
+C)XML document must have only one root element (Ans)
+
+
+--------------------------------------------------
+Question 7
+--------------------------------------------------
+Correct way to link an external stylesheet with a XML?
+
+A)<?xml-stylesheet  type='text/css' href='file.css'?> 
+B)<?xml-stylesheet  type='text/css' src='file.css'?>
+C)<?xml version='1.0' type='text/css' href='file.css'?>
+D)<?xml version='1.0' type='text/css' src='file.css'?>
+
+
+--------------------------------------------------
+Question 8
+--------------------------------------------------
+Which selector in Jquery selects all the child paragraphs of a division with ID 'main'
+A)$(.main>p)
+B)$(#main>P)
+C)$(#main p)
+D)$(div>p)
+
+
+--------------------------------------------------
+Question 9
+--------------------------------------------------
+True or False
+a.Object of an abstract class can be created?
+b.Abstract class can be inherited
+
+A)a-TRUE,b-FALSE
+B)a-FALSE,b-TRUE
+C)BOTH TRUE
+D)BOTH FALSE
+
+--------------------------------------------------
+Question 10
+--------------------------------------------------
+The process of reducing and factoring out the details of the entity so that we can focus on few concepts at a time with selective ignorance approach is known as?
+A)Inheritance
+B)Abstraction
+C)Polymorphism
+D)Encapsulation
+
+--------------------------------------------------
+Question 11
+--------------------------------------------------
+Say True or False
+Return type of a function plays a role in overloading? 
+Return type of a function plays a role in overriding?
+
+
+A)a-TRUE B-FALSE
+B)A-FALSE B-TRUE 
+C)Both are TRUE
+D)Both are FALSE
+
+--------------------------------------------------
+Question 12
+--------------------------------------------------
+Which of the following are qualified for compile time polymorphism/overloading?
+a.int calc(float, int),int calc(int float)
+b.int calc(int,float),void calc(int,float)
+c)void calc(int,float),int calc(int,float)
+d)int calc(float), int calc(int,float)
+
+
+A)b&c
+B)a&d 
+C)only a
+D)all of the choices
+
+--------------------------------------------------
+Question 13
+--------------------------------------------------
+Class is an instance of an Object?
+A)True
+B)FALSE
+
+--------------------------------------------------
+Question 14
+--------------------------------------------------
+To establish inheritance relationship within 
+
+A) Has a
+B)IS a
+C)Within a
+D)None
+
+Note:Is A Kind Of -> Inheritance
+Has A | Contains | Composed of | While-Part -> Aggregation | Compostion.
+
+
+--------------------------------------------------
+Question 15
+--------------------------------------------------
+
+Which is true about a constructor?
+A)Used to initialize an object
+B)Get invoked automatically when an object is created
+C)Both are correct
+D)None
+
+--------------------------------------------------
+Question 16
+--------------------------------------------------
+a.Non private members of a Base class can be accessed from a derived class.
+b.Protected members are accessible to all the classes in enitre inherited hierarchy
+
+A)a-TRUE , B-False
+B)a-FALSE,b-True
+C)Both are true
+C)Both are false
+
+--------------------------------------------------
+Question 17
+--------------------------------------------------
+Which of the following is not an advantage of Inheritance?
+A)Reusablility
+B)Ease in Maintenance
+C)Code duplication increases
+D)Helps in polymorphism
+
+
+
+--------------------------------------------------
+Question 18
+--------------------------------------------------
+a.Child class has direct access to the private members of the Parent class
+b.Protected members of a class can be accessed by any class in the same package
+
+A)a-True,b-False
+B)a-False,b-True
+C)Both are True
+D)Both are false
+
+--------------------------------------------------
+Question 19
+--------------------------------------------------
+Which of the following has - A relationship between two classes?
+A)Inheritance
+B)Abstraction
+C)Polymorphism
+D)Aggregation
+
+--------------------------------------------------
+Question 20
+--------------------------------------------------
+Foreign key is
+A)Relational Schema
+B)It refers to a unique key in other table
+
+--------------------------------------------------
+Question 21
+--------------------------------------------------
+Select empname,empid,job from employee where job from employee where job=null
+
+A)It displays rows with jobid as null
+B)It displays no data found
+C)Error
+D)None of the choices
+
+--------------------------------------------------
+Question 22
+--------------------------------------------------
+When a subquery returns multiple rows, which of the below operators cannot be used
+A)IN
+B)SOME
+C)ANY
+D)BETWEEN
+E)LIKE
+
+A)a,b
+B)d,e
+C)a,e
+D)b,c
+
+
+--------------------------------------------------
+Question 23
+--------------------------------------------------
+Representation of entity sets:
+
+A)Rectangle
+B)Ellipse
+C)Arrows
+D)Diamond
+
+--------------------------------------------------
+Question 24
+--------------------------------------------------
+a.Database is isolated from applicaiton
+b.Concurrent access to database denied
+
+A)a
+B)b
+C)a,b
+D)none
+
+--------------------------------------------------
+Question 25
+--------------------------------------------------
+To send Data to specific address 
+
+A)IP
+B)TCP
+C)UDP
+D)All of these
+
+
+--------------------------------------------------
+Question 26
+--------------------------------------------------
+Here is the structure of the customers table
+
+CUSTOMERS(Cust_name,Cust_DOB,Cust_Gender,Cust_city,Cust_Credit_Limit)
+Using the Customers table , you need to generate a report that shown the average credit limit for customers in washington and new york.
+
+
+A)SELECT cust_city,AVG(cust_credit_limit)
+from customers
+where cust_city in ('Washington','new york')
+group by cust_credit_limit, cust_city;           
+
+B)SELECT cust_city,AVG(cust_credit_limit)
+from customers
+where cust_city in ('Washington','new york')
+group by cust_city,cust_credit_limit;
+
+C)SELECT cust_city,AVG(cust_credit_limit)      
+from customers
+where cust_city in ('Washington','new york')
+group by cust_city;
+
+D)SELECT cust_city,avg(nvl(cust_credit_limit,0))  // if any of the cust_credit_limit is null it will be replaced with 0, 
+from customers                                     // to calculate null, else the output average will be null
+where cust_city in ('washington','new york');
+
+
+--------------------------------------------------
+Question 27
+--------------------------------------------------
+Consider the structure of the employees and departments table.
+
+Employees(emp_no,emp_name,salary,department_dd)
+Department(Department_id,dept_name,location_id)
+select e.emp_name,d.dept_name
+from employees e
+join departments d
+on e.department_id=d.department_id
+where depeartment_id not in (10,40)
+order by dept_name;
+
+
+
+--------------------------------------------------
+Question 28
+--------------------------------------------------
+Which sorting order will place the null values at the last
+
+A)DESC
+B)ASC
+C)1st ASC, and then DESC
+D)Null values cannot be used to sort
+
+
+--------------------------------------------------
+Question 29
+--------------------------------------------------
+Delete from sales;
+There are no other uncommitted transactions on the SALES table
+Which statement is true about the delete statement?
+
+A)It removes all the rows as well as the structure of the table
+B)It removes all the rows in the table and deleted rows cannot be rolled back
+C)It removes all the rows in the table and deleted rows can be rolled back
+D)It would not remove the rows if the table has a primary key
+
+
+
+--------------------------------------------------
+Question 30
+--------------------------------------------------
+In relation R(A,B,C,D),AB->C,B->D are dependencies.Then tables after normalizing it would be
+
+A)R1(A,B,C),R2(B,C)
+B)R1(A,B,D),R2(B,C)
+C)R1(A,B,C),R2(B,C)
+D)R1(A,B,C,D),R2(B,D)
+
+
+--------------------------------------------------
+Question 31
+--------------------------------------------------
+What is wrong with the below code
+<p id="someparagraph" class="someclass">Hello <p>
+<p id="someparagraph1" class="someclass">Hello <p>
+
+A)id and class are same between both the paragraphs.Cannot use the same twice
+B)id as same between both the paragraphs.Cannot use the same id twice
+C)Nothing wrong.Should be OK
+D)None of the above
+
+
+
+--------------------------------------------------
+Question 32
+--------------------------------------------------
+var a=5;
+var b=5+'5';
+alert(b);
+The above code will display:
+
+
+A)10
+B)55
+C)5'5'
+D)error
+
+--------------------------------------------------
+Question 33
+--------------------------------------------------
+Protocols specific such as WWW,e-mail,FTP belong to
+
+A)Network layer
+B)Application layer
+C)Transport Layer
+D)Hardware layer
+
+--------------------------------------------------
+Question 34
+--------------------------------------------------
+HTTP Connection method in which the data is visible on the browser is
+
+A)PUT
+B)HEAD
+C)POST
+D)GET
+--------------------------------------------------
+Question 35
+--------------------------------------------------
+Which of the following are the ways to apply css to html.
+
+A)in-line
+B)external
+C)Internal
+D)All of the above
+
+--------------------------------------------------
+Question 36
+--------------------------------------------------
+
+Client side scriptiong to program the behaviour of browser
+A)Javascript
+
+--------------------------------------------------
+Question 37
+--------------------------------------------------
+In html we can place tag in the element too
+A)true
+B)false
+
+--------------------------------------------------
+Question 38
+--------------------------------------------------
+var x='25';
+var y=25;
+x==y?
+
+--------------------------------------------------
+Question 39
+--------------------------------------------------
+$(document).ready()
+to prevent code from runnig before the dom elements
+
+TRUE

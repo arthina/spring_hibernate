@@ -1,0 +1,328 @@
+----------------------------------------------------------------------------------
+QUESTION 1
+----------------------------------------------------------------------------------
+false:
+A)A class containing abstract methods is called an abstract class.
+B)Abstract methods should be implemented in the derived class
+C)An abstract class cannot have non abstract methods. (Ans)
+D)A class must be qualified an 'abstract' class, if it contains one abstract method.
+E)None of the above.
+
+
+----------------------------------------------------------------------------------
+QUESTION 2
+----------------------------------------------------------------------------------
+The fields in an interface are implicitly specified as
+
+A)static
+B)protected 
+C)static and final(Ans)
+D)protected and final
+E)final
+
+----------------------------------------------------------------------------------
+QUESTION 3
+----------------------------------------------------------------------------------
+
+The wrapping up of data and functions into a single unit is called
+
+A)Encapsulation(Ans)
+B)Abstraction
+C)Data hiding
+D)Polymorphism
+E)Message Passing
+
+----------------------------------------------------------------------------------
+QUESTION 4
+----------------------------------------------------------------------------------
+Which class definitons is a valid definiton of a class that cannot be extended?
+
+A)class Sample{}
+B)Abstract class{}
+C)final class Sample{} (Ans in java & C# is sealed)
+D)static class Sample{}
+E)native class Sample{}
+
+----------------------------------------------------------------------------------
+QUESTION 5
+----------------------------------------------------------------------------------
+
+Which fields are accessible from outside the package com.lnt.demo?
+
+package com.lnt.demo;
+public class MyClass{
+int i;
+public int j;
+protected int k;
+private int I;
+}
+
+A)i is accessible in all classes in other packages
+B)j is accessible in all classes in other packages(Ans)
+C)
+D)
+E)
+
+----------------------------------------------------------------------------------
+QUESTION 6
+----------------------------------------------------------------------------------
+What do you define in an interface?
+
+A) Transient variables
+B) Instance variables
+C) Final methods
+D) Constants (Ans)
+E) Static methods (Ans)
+
+----------------------------------------------------------------------------------
+QUESTION 7
+----------------------------------------------------------------------------------
+public class A{
+public void a()
+{
+S.O.P ("Class A");
+}
+}
+public class B extends A{
+public void a()
+{
+S.O.P("Class B");
+}
+}
+public class C extends B
+{
+public void a()
+{
+super.a();
+S.O.P("Class C");
+}
+}
+public class D
+{
+public static void main (String[] args){
+A c = new C();
+c.a();
+}
+
+
+
+
+A)Class A Class C
+B)Class C Class B
+C)Class  A Class B
+D)Class B Class C(Ans)
+E)Class B Class A
+
+(Only Class A will be printed if its C# as it requires 'override' keyword)
+
+
+----------------------------------------------------------------------------------
+QUESTION 8
+----------------------------------------------------------------------------------
+private String thing;
+String getThing(){
+return thing;
+}
+
+What do u add to the declaration of getThing() method for the mthod to be callable within a non subclass class in different package?
+
+(ANS) Public
+
+----------------------------------------------------------------------------------
+QUESTION 9
+----------------------------------------------------------------------------------
+
+Valid XML document means
+
+(Ans)The xml document dtd associated with it and it compiles with that DTD
+
+----------------------------------------------------------------------------------
+QUESTION 10
+----------------------------------------------------------------------------------
+How can we write attributes having multiple values?
+
+(Ans)<myElement myAttribute = "value1 value2/>
+
+----------------------------------------------------------------------------------
+QUESTION 11
+----------------------------------------------------------------------------------
+The syntax for writing default values for element is
+
+A)<?xsd:element name = "max" type ="xsd:integer" value="100" />
+B)<?xsd:element name = "max" type ="xsd:integer" fixValue="100" />
+C)<?xsd:element name = "max" type ="xsd:integer" default="100" />  (Ans)
+D)<?xsd:element name = "max" type ="xsd:integer" defaultval="100" />
+
+
+----------------------------------------------------------------------------------
+QUESTION 12
+----------------------------------------------------------------------------------
+What are the following steps carried out by OS?
+
+A)Allocate memory for the program (Ans)
+B)Load the program from secondary storage(Ans)
+C)Compiling the program
+D)Storing data for the program
+
+
+----------------------------------------------------------------------------------
+QUESTION 13
+----------------------------------------------------------------------------------
+Which of the following are flow control executable statements?
+
+A)function call
+B)return
+C)switch
+D)goto (Ans)
+
+
+----------------------------------------------------------------------------------
+QUESTION 14
+----------------------------------------------------------------------------------
+Linked lists are flexible in terms of addition/deletion of nodes as opposed to arrays(State True/False)
+A)TRUE
+B)FALSE (Ans)
+
+
+----------------------------------------------------------------------------------
+QUESTION 15
+----------------------------------------------------------------------------------
+Processing steps are represented as ____ in flow chart.
+
+A)Rounded rectangle
+B)Arrows
+C)Rectangles(Ans)
+D)Parallelograms
+
+----------------------------------------------------------------------------------
+QUESTION 16
+----------------------------------------------------------------------------------
+"\t" escape sequence results in
+
+A)Insertion point moves to the next tab stop
+B)tab (Ans)
+C)
+D)
+E)
+
+----------------------------------------------------------------------------------
+QUESTION 17
+----------------------------------------------------------------------------------
+
+int arr[][] {{3,2},{5,6},{9,5},{4,8}};
+
+arr[2][1] = arr[1][0]++ + ++arr[2][0];
+SOP arr[2][1];
+
+A)13
+B)15(Ans)
+C)17
+D)None of these
+
+----------------------------------------------------------------------------------
+QUESTION 18
+----------------------------------------------------------------------------------
+int i = 10; j =20;
+j=i++;
+j--;
+if(i/j >1)
+i++;
+SOP(i+j);
+}
+
+A)7
+B)9
+C)12
+D)14
+
+Question is wrong.!
+
+----------------------------------------------------------------------------------
+QUESTION 19
+----------------------------------------------------------------------------------
+int i = 1 , j= 1;
+switch(i)
+{
+case(1):j=i++;
+case(2):j=j+i++;
+case(3):j+++i;
+}
+printf(j);
+
+A)5
+B)6(Ans)
+C)7
+D)8
+
+
+
+----------------------------------------------------------------------------------
+QUESTION 20
+----------------------------------------------------------------------------------
+SELECT last_name , salary , hire_date FROM EMPLOYEES ORDER BY salary DESC;
+SELECT last_name, salary, hire_date FROM EMPLOYEES ORDER BY 2 DESC;
+
+A)The 2 statements produce identical results.
+B)The 2nd statement returns a syntax error.(Ans)
+C)There is no need ot sp...
+
+----------------------------------------------------------------------------------
+QUESTION 21
+----------------------------------------------------------------------------------
+___ Variables are defined in the form clause via the use of the as clause
+
+A)Single
+B)Multiple
+C)Tuple(Ans)
+D)Null
+
+----------------------------------------------------------------------------------
+QUESTION 22
+----------------------------------------------------------------------------------
+
+___ is a relation that every non PK attribute is fully functionally dependent on the PK
+
+A)2nd normal(Ans)
+B)3rd normal
+C)1st normal form
+D)Boy codd normal form
+
+----------------------------------------------------------------------------------
+QUESTION 21
+----------------------------------------------------------------------------------
+
+
+HTML 5
+
+A)It brought new element for web structure like nav,headeretc
+B)
+C)Inbuild multimedia element in html5 like audio,video, convas
+D)A and C both(Ans)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
